@@ -1,3 +1,5 @@
+/*Start Andy Bell's latest CSS reset */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -15,7 +17,7 @@ html {
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  margin: 0;
+  margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -71,3 +73,92 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* End Andy Bell's latest CSS reset */
+
+body {
+    background-image: url('/images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 3rem 1rem;
+    padding: 3rem;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+main > img {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+
+main > h1 {
+  font-size: 0.725rem;
+}
+
+
+.order-summary {
+  border-radius: 0 0 1.25rem 1.25rem;
+  background-color: white;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.order-summary-description {
+  margin-bottom: 2rem;
+}
+
+.order-summary-description > p {
+  font-weight: 500;
+}
+
+.illustration-hero > img {
+  border-radius: 1.25rem 1.25rem 0 0;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.annual-plan {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.25rem;
+    gap: 2rem;
+    align-items: last baseline;  
+    margin-bottom: 1.5rem;
+    background-color: #eee;
+    padding: 1rem;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.change-plan {
+    margin-left: auto;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.proceed-to-payment {
+  background-color: blue;
+  color: white;
+  padding: 0.725rem;
+  border-radius: 0.725rem;
+  border: 0;
+}
+
+.cancel-order {
+  margin-bottom: 3rem;
+}
