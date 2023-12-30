@@ -76,7 +76,7 @@ textarea:not([rows]) {
 /* End Andy Bell's latest CSS reset */
 
 body {
-    background-image: url('/images/pattern-background-mobile.svg');
+    background-image: url('./images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(225, 100%, 94%);
