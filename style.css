@@ -102,7 +102,7 @@ main > img {
   object-fit: cover;
 }
 
-main > h1 {
+h1 {
   font-size: 0.725rem;
 }
 
