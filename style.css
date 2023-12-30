@@ -82,7 +82,7 @@ body {
     background-color: hsl(225, 100%, 94%);
     display: flex;
     justify-content: center;
-    /* max-width: 23.4375rem; */
+    max-width: 23.4375rem;
 
 }
 
