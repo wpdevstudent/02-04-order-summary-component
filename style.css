@@ -116,9 +116,10 @@ main > h1 {
 
 .order-summary-description {
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
-p.order-summary-description > p {
+p.order-summary-description {
   font-weight: 500;
 }
 
