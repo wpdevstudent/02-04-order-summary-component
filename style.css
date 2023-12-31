@@ -83,23 +83,23 @@ body
 {
     background-image: url('/images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: hsl(225, 100%, 94%);
 }
 
 .order-summary-component 
 {
-    max-width: 376px; /* for mobile devices */
-    margin:auto;
+    max-width: 376px; 
+    max-height: 100%;
     border-radius: 1rem 1rem;
     background-color: white;
-    margin: 1rem 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
+    
 }
 
 .hero-illustration 
@@ -174,6 +174,11 @@ h2
     font-size: 0.875rem;
 }
 
+.change-plan:hover {  /* or it could be :active */
+  text-decoration: none;
+  color: hsl(245, 75%, 75%);
+}
+
 .proceed-to-payment,
 .cancel-order
 {
@@ -185,11 +190,19 @@ h2
     min-width: 100%;
     background-color: blue;
     color: white;
+    font-weight: 700;
     padding: 0.725rem;
     border-radius: 0.725rem;
     border: 0;
     margin-bottom: 1rem;
     box-shadow: 10px 10px 50px hsl(245, 75%, 85%);
+}
+
+.proceed-to-payment:hover { /* or it could be :active */
+  text-decoration: none;
+  color: hsl(245, 75%, 75%);
+  opacity: 0.8;
+  color: white;
 }
 
 .cancel-order
@@ -202,6 +215,12 @@ h2
     font-size: 0.875rem;
 }
 
+.cancel-order:hover 
+{
+  color: black;
+  font-weight: 700;
+}
+
 /* End styling for small screens up to 376px width */
 
 /* Start styling for screens between 376px to 1440px */
@@ -211,10 +230,12 @@ h2
     body 
 {
     background-image: url('/images/pattern-background-desktop.svg');
+    background-position-y: 0px;
+    background-repeat: no-repeat;
 }
 
-.order-summary-component 
-{
+.order-summary-component {
     margin: auto;
 }
-}
+    
+  }
