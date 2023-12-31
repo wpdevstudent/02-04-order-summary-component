@@ -1,4 +1,4 @@
-/*Start Andy Bell's latest CSS reset */
+/* Start Andy Bell's latest CSS reset */
 
 /* Box sizing rules */
 *,
@@ -75,96 +75,146 @@ textarea:not([rows]) {
 
 /* End Andy Bell's latest CSS reset */
 
-body {
-    background-image: url('./images/pattern-background-mobile.svg');
+/** Start the Order Summary Component **/
+
+/** Begin styling the Order Summary component **/
+
+body 
+{
+    background-image: url('/images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(225, 100%, 94%);
+}
+
+.order-summary-component 
+{
+    max-width: 376px; /* for mobile devices */
+    margin:auto;
+    border-radius: 1rem 1rem;
+    background-color: white;
+    margin: 1rem 1rem;
     display: flex;
     justify-content: center;
-}
-
-.order-summary-component {
-    max-width: 23.4375rem;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    margin: 3rem 1rem;
-    padding: 3rem;
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
+}
+
+.hero-illustration 
+{
+    border-radius: 1rem 1rem 0 0;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h2
+{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
 
 }
 
-.illustration-hero {
-  border-radius: 1rem 1rem 0 0;
-  height: 160px;
-  object-fit: cover;
+.order-summary 
+{
+    padding: 0 1rem;
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: hsl(223, 47%, 23%); 
-}
-
-
-.order-summary {
-  border-radius: 0 0 1.25rem 1.25rem;
-  background-color: white;
-  padding: 3rem;
-  margin-bottom: 2rem;
-}
-
-.order-summary-description {
-  margin-bottom: 2rem;
-  font-weight: 500;
-  color: hsl(224, 23%, 55%);
-}
-
-.illustration-hero > img {
-  border-radius: 1.25rem 1.25rem 0 0;
-  object-fit: cover;
-  max-width: 100%;
-}
-
-.annual-plan {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 1.25rem;
-    gap: 2rem;
-    align-items: center;  
-    margin-bottom: 1.5rem;
-    background-color: #eee;
+.order-annotation 
+{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
     padding: 1rem;
-    flex: 1;
-    font-size: 1rem;
 }
 
-.annual-plan > img {
-  width: 48px;
-  height: 48px;
-}
-
-.change-plan {
-    margin-left: auto;
-    align-self: center;
-}
-
-.buttons {
+.annual-plan-widget 
+{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
 }
 
-.proceed-to-payment {
-  background-color: blue;
-  color: white;
-  padding: 0.725rem;
-  border-radius: 0.725rem;
-  border: 0;
+
+.plan-and-price 
+{
+    margin-right: auto;
+    margin-left: 1rem;
 }
 
-.cancel-order {
-  margin-bottom: 3rem;
+.annual-plan
+{
+    margin-bottom: -1.25rem;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.annual-plan-price 
+{
+    color: hsl(224, 23%, 55%);
+}
+
+.annual-plan,
+.annual-plan-price
+{
+    font-size: .95rem;
+}
+
+.change-plan 
+{
+    font-size: 0.875rem;
+}
+
+.proceed-to-payment,
+.cancel-order
+{
+    display: block;
+}
+
+.proceed-to-payment 
+{
+    min-width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 0.725rem;
+    border-radius: 0.725rem;
+    border: 0;
+    margin-bottom: 1rem;
+    box-shadow: 10px 10px 50px hsl(245, 75%, 85%);
+}
+
+.cancel-order
+{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    min-width: 100%;
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+/* End styling for small screens up to 376px width */
+
+/* Start styling for screens between 376px to 1440px */
+
+@media (max-width: 90rem) {
+
+    body 
+{
+    background-image: url('/images/pattern-background-desktop.svg');
+}
+
+.order-summary-component 
+{
+    margin: auto;
+}
 }
